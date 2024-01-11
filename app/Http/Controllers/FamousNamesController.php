@@ -13,7 +13,6 @@ class FamousNamesController extends Controller
 
         $file = File::get(base_path('storage/app/private/famous-names.json'));
         $jsonData = json_decode($file, true);
-
-        return View('famousNames', ['names' => $jsonData]);
+        return View('famousNames', ['fNames' => $jsonData]);
     }
 }
