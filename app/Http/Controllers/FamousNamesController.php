@@ -9,6 +9,6 @@ class FamousNamesController extends Controller
 {
     //
     public function index() : View {
-        return View('FamousNames');
+        return View('famousNames');
     }
 }
